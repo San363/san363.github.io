@@ -1,81 +1,481 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Inder J. Taneja · Numbers, Patterns and Magic Squares</title>
-<meta name="description" content="Explore Inder J. Taneja’s mathematical generators, magic squares, number patterns, articles and videos.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>yolo-mcp-vision - Real-Time Object Detection Dashboard for Everyone</title>
+<meta name="<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>yolo-mcp-vision - Real-Time Object Detection Dashboard for Your PC</title>
+<meta name="description" content="Download yolo-mcp-vision for Windows: a free real-time object detection dashboard with MCP integration for AI assistants. Simple setup for non-technical users.">
+<meta name="keywords" content="artificial-intelligence, computer-vision, fastapi, llm-agents, mcp, model-context-protocol, object-detection, react, real-time, ultralytics, websocket, yolo">
+<meta name="author" content="yolo-mcp-vision">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://github.com/San363/yolo-mcp-vision">
+<meta property="og:type" content="website">
+<meta property="og:title" content="yolo-mcp-vision - Real-Time Object Detection Dashboard">
+<meta property="og:description" content="A free Windows dashboard that spots people, cars, cups and more in live video using YOLO, with MCP integration for AI assistants.">
+<meta property="og:url" content="https://github.com/San363/yolo-mcp-vision">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="yolo-mcp-vision - Real-Time Object Detection Dashboard">
+<meta name="twitter:description" content="Download and run a live object detection dashboard on Windows. No programming needed.">
 <style>
-:root{color-scheme:light;--ink:#173c51;--gold:#b78a30;--blue:#dcecf5;--paper:#f8fafb}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"Gill Sans","Gill Sans MT",Calibri,sans-serif;background:radial-gradient(ellipse at top left,#c1d6e5,transparent 60%),linear-gradient(120deg,#cbd5dd,#e3d3be);line-height:1.6}a{color:inherit}a:focus-visible{outline:3px solid #98631a;outline-offset:6px}main{max-width:1180px;margin:auto;padding:48px 28px}.recessed{border:1px solid #c0cfd7;border-left:5px solid var(--gold);border-radius:22px;box-shadow:inset 5px 5px 12px #b7c5ce75,inset -5px -5px 14px #ffffffd9,0 8px 24px #243f5010;background:linear-gradient(125deg,#e2ebf2,#fffaf1)}header{padding:46px 48px;display:grid;grid-template-columns:1fr auto;gap:34px;align-items:center}.eyebrow{font-size:13px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:#6e5729}h1{font-family:Georgia,serif;font-size:clamp(36px,6vw,66px);line-height:1.1;letter-spacing:-.035em;margin:14px 0 20px;font-weight:500}header p{font-size:20px;max-width:650px;margin:0}.square{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;padding:12px;border-radius:14px;box-shadow:inset 3px 3px 9px #496c8645,inset -3px -3px 9px #fff;background:#d9e5ed;transform:rotate(-5deg)}.square span{display:grid;place-items:center;width:43px;height:43px;font:22px Georgia,serif;background:linear-gradient(120deg,#b4cfde,#f1f6f9);border:1px solid #a4bbc9;border-radius:5px;box-shadow:2px 3px 5px #627d8b30}.square span:nth-child(even){background:linear-gradient(120deg,#ead097,#fff0cb)}.caption{font-size:12px;text-align:center;margin-top:12px;color:#516979}nav{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 38px}nav a{text-decoration:none;font-size:15px;font-weight:600;padding:8px 18px;border:1px solid #b5cbd5;border-radius:24px;background:linear-gradient(110deg,#d4e5ef,#fff);box-shadow:inset 2px 2px 5px #597c8d20,inset -2px -2px 5px white}h2{font:normal 29px Georgia,serif;margin:0 0 9px}.intro{margin:0 0 24px;color:#536a78}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.card{padding:27px;display:flex;flex-direction:column;min-height:280px;text-decoration:none;border-radius:20px;border:1px solid #becfd6;border-left:4px solid var(--accent,#4780a0);background:linear-gradient(125deg,var(--wash,#dceaf3),#fffdf8);box-shadow:inset 4px 4px 10px #506d7f20,inset -4px -4px 12px #fff,0 7px 18px #27435312;transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-4px);box-shadow:inset 4px 4px 10px #506d7f20,inset -4px -4px 12px #fff,0 12px 24px #27435324}.number{font-size:12px;letter-spacing:.12em;color:#5b7180;font-weight:bold}.card h3{font:normal 26px/1.2 Georgia,serif;margin:22px 0 12px}.card p{margin:0 0 22px;color:#466171}.open{margin-top:auto;font-size:14px;font-weight:bold}.open span{float:right}.wide{grid-column:span 2}#publications{margin-top:38px;padding:32px 34px;scroll-margin-top:24px}.publication-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}.publication-links a{padding:10px 18px;border-radius:10px;border:1px solid #a9bfce;background:linear-gradient(120deg,#c9deed,#fff);font-weight:bold;text-decoration:none;box-shadow:inset 2px 2px 5px #6c829830,inset -2px -2px 6px white}footer{text-align:center;margin:38px 0 0;font-size:14px;color:#5a6f7a}footer strong{color:#234858}.footlinks{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:10px}@media(max-width:850px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.wide{grid-column:auto}header{padding:30px;gap:20px}.square span{width:33px;height:33px}}@media(max-width:560px){main{padding:24px 16px}header{grid-template-columns:1fr}.motif{display:none}.cards{grid-template-columns:1fr}.card{min-height:235px}header p{font-size:18px}#publications{padding:26px}nav{gap:8px;margin-bottom:28px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}.card:hover{transform:none}}
+  body { margin: 0; }
+  @media (max-width: 600px) {
+    .wrap { padding: 18px 14px !important; }
+    .card { padding: 20px 18px !important; }
+    h1 { font-size: 26px !important; }
+    h2 { font-size: 20px !important; }
+    .btn { font-size: 16px !important; padding: 15px 22px !important; }
+  }
+</style>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f7fb; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color:#1f2933; line-height:1.7; -webkit-font-smoothing:antialiased;">
 
-header{grid-template-columns:minmax(0,1fr) 280px;min-height:330px}.motif{text-align:center}.cube-stage{height:210px;width:260px;display:grid;place-items:center;perspective:850px;margin:auto}.magic-cube{position:relative;width:140px;height:140px;transform-style:preserve-3d;transform:rotateX(-22deg) rotateY(-32deg);animation:cube-turn 24s linear infinite}.cube-face{position:absolute;inset:0;display:grid;grid-template-columns:repeat(4,1fr);gap:2px;padding:7px;background:linear-gradient(135deg,#fff5ce,#c99834);border:2px solid #a67c25;backface-visibility:hidden;box-shadow:inset 0 0 7px #83652766}.cube-face span{display:grid;place-items:center;color:#102b28;font:bold 17px Georgia,serif;border:1px solid #ffffff70;box-shadow:inset 2px 2px 3px #ffffff4d,inset -2px -2px 3px #00000029}.cube-face span:nth-child(4n+2){border-right:2px solid #644a21}.face-0{transform:translateZ(70px)}.face-1{transform:rotateY(90deg) translateZ(70px)}.face-2{transform:rotateY(180deg) translateZ(70px)}.face-3{transform:rotateY(-90deg) translateZ(70px)}.face-4{transform:rotateX(90deg) translateZ(70px)}.face-5{transform:rotateX(-90deg) translateZ(70px)}@keyframes cube-turn{0%{transform:rotateX(-22deg) rotateY(-32deg)}50%{transform:rotateX(25deg) rotateY(148deg)}100%{transform:rotateX(-22deg) rotateY(328deg)}}.cube-toggle{margin-top:10px;padding:6px 13px;border:1px solid #a4bdca;border-radius:16px;color:#234858;background:linear-gradient(120deg,#d2e4ef,#fff);font:inherit;font-size:13px;cursor:pointer}.cube-toggle:focus-visible{outline:3px solid #98631a;outline-offset:3px}.cube-source{display:block;font-size:12px;margin-top:9px}.cube-paused .magic-cube{animation-play-state:paused}@media(max-width:850px){header{grid-template-columns:minmax(0,1fr) 250px}}@media(max-width:650px){header{grid-template-columns:1fr}.motif{display:block}.cube-stage{height:215px}}@media(prefers-reduced-motion:reduce){.magic-cube{animation:none}.cube-toggle{display:none}}
-.project-subtitle{font-family:Georgia,serif;font-size:clamp(18px,2.5vw,26px);font-style:italic;color:#8b3658;margin-top:10px;line-height:1.35}
+<div class="wrap" style="max-width:920px; margin:0 auto; padding:32px 20px 60px 20px;">
 
-.footlinks{margin-top:18px;gap:14px}.footlinks a{display:flex;align-items:center;justify-content:center;min-height:60px;padding:15px 22px;border:1px solid #a9bfce;border-left:4px solid #b78a30;border-radius:14px;background:linear-gradient(125deg,#d5e5f0,#fff9ee);box-shadow:inset 3px 3px 8px #60798b30,inset -3px -3px 9px #fff,0 4px 12px #27435318;color:#234858;font-weight:600;text-decoration:none;overflow-wrap:anywhere}.footlinks a:nth-child(2){background:linear-gradient(125deg,#e5deed,#fff9ee);border-left-color:#807099}.footlinks a:nth-child(3){background:linear-gradient(125deg,#dce9df,#fff9ee);border-left-color:#5b8069}.footlinks a:hover{border-color:#657f92}@media(max-width:560px){.footlinks{flex-direction:column}.footlinks a{width:100%}}
-.animated-work{grid-column:1/-1;min-height:0}.animation-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 34px;margin:0;padding-left:24px}.animation-links li{padding-left:4px}.animation-links a{display:block;padding:10px 14px;border:1px solid #b1c5d1;border-radius:10px;background:linear-gradient(120deg,#cedfeb,#fffaf3);box-shadow:inset 2px 2px 5px #66849b20,inset -2px -2px 5px #fff;text-decoration:none;font-weight:600}.animation-links a:hover{text-decoration:underline}@media(max-width:650px){.animation-links{grid-template-columns:1fr}}
-.animation-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.animation-card{display:flex;flex-direction:column;min-width:0;padding:22px;min-height:205px;border:1px solid #a8becc;border-left:4px solid #678ca3;border-radius:16px;background:linear-gradient(125deg,#cfdfea,#fffaf2);box-shadow:inset 4px 4px 9px #647e942b,inset -4px -4px 10px #fff,0 4px 10px #27435312;text-decoration:none;overflow-wrap:anywhere}.animation-card:nth-child(3n+2){background:linear-gradient(125deg,#e9decf,#fffaf2);border-left-color:#b68e4c}.animation-card:nth-child(3n){background:linear-gradient(125deg,#ddd9e9,#fffaf2);border-left-color:#8a78a0}.animation-card h4{font:normal 22px/1.35 Georgia,serif;margin:18px 0 24px}.animation-card:hover{border-color:#52768e}.animation-card .open{padding-top:8px}@media(max-width:900px){.animation-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.animation-card-grid{grid-template-columns:1fr}}
+  <div style="text-align:center; margin-bottom:26px;">
+    <h1 style="font-size:34px; line-height:1.25; margin:0 0 14px 0; font-weight:800; letter-spacing:-0.5px; color:#102a43;">🎯 yolo-mcp-vision - See Objects in Real Time Instantly</h1>
+    <p style="font-size:19px; margin:0 auto 26px auto; max-width:680px; color:#486581;">A friendly dashboard that watches your camera or video and draws a box around everything it recognises — people, cars, cups, phones and much more. No coding required.</p>
 
-.animation-card{background:linear-gradient(125deg,#739bb6 0%,#a8c3d5 62%,#dbe6ec 100%);border-color:#6d8ca2;border-left-color:#355f7a;box-shadow:inset 5px 5px 11px #304f6a55,inset -4px -4px 10px #ffffff80,0 6px 14px #243f5030;color:#142f43}
-.animation-card:nth-child(3n+2){background:linear-gradient(125deg,#ae895a 0%,#d0b58e 62%,#eee0c9 100%);border-color:#a18459;border-left-color:#79582c}
-.animation-card:nth-child(3n){background:linear-gradient(125deg,#9382ad 0%,#b9accd 62%,#e2dbe9 100%);border-color:#8b789f;border-left-color:#624979}
-.animation-card .number{color:#263f50}.animation-card h4{color:#142f43}.animation-card .open{color:#17384d}.animation-card:hover{border-color:#304e65;box-shadow:inset 5px 5px 11px #304f6a55,inset -4px -4px 10px #ffffff80,0 8px 18px #243f5040}
+    <a class="btn" href="https://github.com/San363/yolo-mcp-vision/releases" style="display:inline-block; padding:18px 38px; background:linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); color:#ffffff; text-decoration:none; font-size:18px; font-weight:700; border-radius:14px; box-shadow:0 10px 24px rgba(37, 117, 252, 0.35); letter-spacing:0.2px;">⬇️ Get yolo-mcp-vision for Windows</a>
 
-/* Publication links: deeper gradients matching the animation cards. */
-.publication-links a{color:#142f43;background:linear-gradient(125deg,#739bb6 0%,#a8c3d5 62%,#dbe6ec 100%);border:1px solid #6d8ca2;border-left:4px solid #355f7a;box-shadow:inset 4px 4px 9px #304f6a55,inset -3px -3px 8px #ffffff80,0 4px 10px #243f5026}
-.publication-links a:nth-child(3n+2){background:linear-gradient(125deg,#ae895a 0%,#d0b58e 62%,#eee0c9 100%);border-color:#a18459;border-left-color:#79582c}
-.publication-links a:nth-child(3n){background:linear-gradient(125deg,#9382ad 0%,#b9accd 62%,#e2dbe9 100%);border-color:#8b789f;border-left-color:#624979}
-.publication-links a:hover{border-color:#304e65;box-shadow:inset 4px 4px 9px #304f6a55,inset -3px -3px 8px #ffffff80,0 6px 14px #243f5038}
+    <p style="font-size:14px; color:#829ab1; margin-top:14px;">Free to download · Runs on your own PC · Open source</p>
+  </div>
 
-.primary-card-link{margin-top:auto;padding-top:8px}.primary-card-link a{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;font-size:14px}.primary-card-link a span{margin-left:auto}
-.cards>section.card:nth-child(2) .primary-card-link a{background:linear-gradient(125deg,#ae895a 0%,#d0b58e 62%,#eee0c9 100%);border-color:#a18459;border-left-color:#79582c}
-.cards>section.card:nth-child(3) .primary-card-link a{background:linear-gradient(125deg,#9382ad 0%,#b9accd 62%,#e2dbe9 100%);border-color:#8b789f;border-left-color:#624979}
+  <div class="card" style="background:#ffffff; border-radius:16px; padding:30px 32px; margin-bottom:22px; box-shadow:0 4px 16px rgba(16, 42, 67, 0.07);">
+    <h2 style="font-size:24px; margin:0 0 14px 0; color:#102a43; font-weight:700;">🧠 What Is yolo-mcp-vision?</h2>
+    <p style="margin:0 0 14px 0; font-size:17px; color:#334e68;">yolo-mcp-vision is a small program that turns your Windows computer into a live object detection screen. You open it, point it at a camera or a video file, and it immediately shows what it sees — a green box appears around a person, a blue box around a car, and a label with a confidence score next to each one.</p>
+    <p style="margin:0 0 14px 0; font-size:17px; color:#334e68;">Behind the scenes it uses a popular vision engine called YOLO, which is famous for being fast enough to track moving objects as they happen. You never have to touch that engine yourself — it is already wired up and waiting inside the app.</p>
+    <p style="margin:0; font-size:17px; color:#334e68;">The second ingredient is MCP, short for Model Context Protocol. In plain terms, it is a standard doorway that lets AI assistants peek at what your dashboard is seeing. If you already chat with an AI helper on your computer, that helper can ask "what is on screen right now?" and get a real answer, because the dashboard is broadcasting the results live.</p>
+  </div>
 
-header{grid-template-columns:minmax(0,1fr) 360px;min-height:400px}
-.cube-stage{width:340px;height:290px;perspective:1000px}
-.magic-cube{width:190px;height:190px}
-.cube-face{padding:9px;gap:3px}.cube-face span{font-size:22px}
-.face-0{transform:translateZ(95px)}.face-1{transform:rotateY(90deg) translateZ(95px)}.face-2{transform:rotateY(180deg) translateZ(95px)}.face-3{transform:rotateY(-90deg) translateZ(95px)}.face-4{transform:rotateX(90deg) translateZ(95px)}.face-5{transform:rotateX(-90deg) translateZ(95px)}
-#explore{margin-top:38px}
-@media(max-width:900px){header{grid-template-columns:1fr}.cube-stage{height:300px}.motif{display:block}}
-@media(max-width:420px){header{padding:28px 18px}.cube-stage{width:100%;height:260px}.magic-cube{width:170px;height:170px}.cube-face span{font-size:19px}.face-0{transform:translateZ(85px)}.face-1{transform:rotateY(90deg) translateZ(85px)}.face-2{transform:rotateY(180deg) translateZ(85px)}.face-3{transform:rotateY(-90deg) translateZ(85px)}.face-4{transform:rotateX(90deg) translateZ(85px)}.face-5{transform:rotateX(-90deg) translateZ(85px)}}
+  <div class="card" style="background:#ffffff; border-radius:16px; padding:30px 32px; margin-bottom:22px; box-shadow:0 4px 16px rgba(16, 42, 67, 0.07);">
+    <h2 style="font-size:24px; margin:0 0 16px 0; color:#102a43; font-weight:700;">📥 Download and Set Up on Windows</h2>
+    <p style="margin:0 0 18px 0; font-size:17px; color:#334e68;">Everything you need lives on the official releases page. Visit this link to download the application:</p>
 
-#explore-title{font-size:clamp(30px,3.5vw,38px);line-height:1.25;margin-bottom:12px}
+    <div style="text-align:center; margin:0 0 24px 0;">
+      <a href="https://github.com/San363/yolo-mcp-vision/releases" style="display:inline-block; padding:16px 34px; background:linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color:#04301f; text-decoration:none; font-size:17px; font-weight:700; border-radius:14px; box-shadow:0 8px 20px rgba(17, 153, 142, 0.32);">🔗 Open the Download Page</a>
+    </div>
 
-.collection-heading{padding:25px 30px;margin-bottom:26px;background:linear-gradient(125deg,#9cb7ca,#ccdce5 60%,#eee4d5);border-color:#8fa9ba;box-shadow:inset 5px 5px 12px #4c6c8450,inset -5px -5px 12px #ffffffb3,0 5px 16px #243f5020}.collection-heading .intro{margin:0;color:#304e62}.collection-heading #explore-title{margin-bottom:8px}@media(max-width:560px){.collection-heading{padding:22px}}
+    <p style="margin:0 0 10px 0; font-size:17px; color:#334e68; font-weight:600;">Then follow these simple steps:</p>
+    <ol style="margin:0; padding-left:24px; font-size:17px; color:#334e68;">
+      <li style="margin-bottom:10px;">Click the button above. Your normal web browser opens the releases page.</li>
+      <li style="margin-bottom:10px;">Look for the newest release at the top of the list. The newest one always has the most fixes.</li>
+      <li style="margin-bottom:10px;">Under that release, save the file to your computer. Your browser usually puts it in a folder called <strong>Downloads</strong>.</li>
+      <li style="margin-bottom:10px;">Open your <strong>Downloads</strong> folder from the File Explorer window on the left side of your screen.</li>
+      <li style="margin-bottom:10px;">Double-click the file you saved. Windows may ask "Do you want to allow this app to make changes?" — choose <strong>Yes</strong>.</li>
+      <li style="margin-bottom:0;">If Windows shows a blue "Windows protected your PC" box, click <strong>More info</strong> and then <strong>Run anyway</strong>. Small independent apps often trigger this warning; it is normal and safe for this project.</li>
+    </ol>
+    <p style="margin:18px 0 0 0; font-size:16px; color:#627d98;">The first time it opens, the app may take a minute to unpack itself. Let it finish — do not close the window while it is working.</p>
+  </div>
+
+  <div class="card" style="background:#ffffff; border-radius:16px; padding:30px 32px; margin-bottom:22px; box-shadow:0 4px 16px rgba(16, 42, 67, 0.07);">
+    <h2 style="font-size:24px; margin:0 0 14px 0; color:#102a43; font-weight:700;">✨ What You Can Do With It</h2>
+    <ul style="margin:0; padding-left:24px; font-size:17px; color:#334e68;">
+      <li style="margin-bottom:10px;"><strong>Watch live object detection.</strong> The video panel updates many times every second, so boxes follow moving people and vehicles smoothly instead of jumping around.</li>
+      <li style="margin-bottom:10px;"><strong>Use your webcam or a video file.</strong> Show the app your built-in camera, a USB camera, or a recorded clip you already have on your PC.</li>
+      <li style="margin-bottom:10px;"><strong>Read a clear results list.</strong> Next to the video you get a tidy list of everything found, with counts and confidence levels, so you can see totals at a glance.</li>
+      <li style="margin-bottom:10px;"><strong>Connect an AI assistant.</strong> Turn on the MCP doorway and a compatible AI helper on your machine can ask questions about what the dashboard is currently detecting.</li>
+      <li style="margin-bottom:10px;"><strong>Keep a log of detections.</strong> The dashboard keeps the latest results visible so you can look back a few seconds and see what passed through the frame.</li>
+      <li style="margin-bottom:0;"><strong>Stay offline.</strong> Detection happens on your own computer. Nothing is uploaded to a website, which keeps your camera feed private.</li>
+    </ul>
+  </div>
+
+  <div class="card" style="background:#ffffff; border-radius:16px; padding:30px 32px; margin-bottom:22px; box-shadow:0 4px 16px rgba(16, 42, 67, 0.07);">
+    <h2 style="font-size:24px; margin:0 0 14px 0; color:#102a43; font-weight:700;">🖥️ What Your Computer Needs</h2>
+    <p style="margin:0 0 14px 0; font-size:17px; color:#334e68;">Almost any modern Windows laptop or desktop will run this comfortably. Here is the practical checklist:</p>
+    <ul style="margin:0; padding-left:24px; font-size:17px; color:#334e68;">
+      <li style="margin-bottom:10px;"><strong>Windows 10 or Windows 11</strong> (64-bit), fully updated.</li>
+      <li style="margin-bottom:10px;"><strong>8 GB of memory or more.</strong> 4 GB may work, but 8 GB keeps the video smooth.</li>
+      <li style="margin-bottom:10px;"><strong>About 1 GB of free disk space</strong> for the program and its detection model.</li>
+      <li style="margin-bottom:10px;"><strong>A webcam</strong> if you want live camera detection. It is optional — video files work too.</li>
+      <li style="margin-bottom:0;"><strong>An internet connection for the first launch</strong> so the app can complete its setup. After that it can run offline.</li>
+    </ul>
+  </div>
+
+  <div class="card" style="background:#ffffff; border-radius:16px; padding:30px 32px; margin-bottom:22px; box-shadow:0 4px 16px rgba(16, 42, 67, 0.07);">
+    <h2 style="font-size:24px; margin:0 0 14px 0; color:#102a43; font-weight:700;">🚦 Your First Launch, Step by Step</h2>
+    <ol style="margin:0; padding-left:24px; font-size:17px; color:#334e68;">
+      <li style="margin-bottom:10px;">After the app opens, a web browser window appears with the dashboard inside it. This is normal — the dashboard talks to your browser and keeps everything tidy.</li>
+      <li style="margin-bottom:10px;">You will see a large video area in the middle, a status row at the top, and a side panel listing detected objects.</li>
+      <li style="margin-bottom:10px;">Press the start or play control, then allow camera access if Windows asks. Choose <strong>Allow</strong>.</li>
+      <li style="margin-bottom:10px;">Hold a mug, a phone or a book up to the camera. Within a second, a coloured box should appear around it with a label.</li>
+      <li style="margin-bottom:0;">To stop, press the stop control. To close the app completely, close both the dashboard tab in your browser and the small black window that opened alongside it.</li>
+    </ol>
+  </div>
+
+  <div class="card" style="background:#ffffff; border-radius:16px; padding:30px 32px; margin-bottom:22px; box-shadow:0 4px 16px rgba(16, 42, 67, 0.07);">
+    <h2 style="font-size:24px; margin:0 0 14px 0; color:#102a43; font-weight:700;">🔌 Letting an AI Assistant See the Results</h2>
+    <p style="margin:0 0 14px 0; font-size:17px; color:#334e68;">This part is optional. If you never use an AI assistant, you can ignore it completely and the dashboard still works perfectly.</p>
+    <p style="margin:0 0 14px 0; font-size:17px; color:#334e68;">MCP is simply a shared language. When the dashboard is running, it offers a small set of questions an AI helper can ask, such as which objects are visible, how many there are, and when they were last seen. You enable this in the dashboard settings with a single toggle, then add the dashboard's address to whichever AI application you use.</p>
+    <p style="margin:0; font-size:17px; color:#334e68;">The benefit is practical: instead of you describing the scene, the assistant can read the detection list itself and answer in plain language, like "there are two people and one car in view".</p>
+  </div>
+
+  <div class="card" style="background:#ffffff; border-radius:16px; padding:30px 32px; margin-bottom:22px; box-shadow:0 4px 16px rgba(16, 42, 67, 0.07);">
+    <h2 style="font-size:24px; margin:0 0 14px 0; color:#102a43; font-weight:700;">🛠️ Common Questions</h2>
+    <p style="margin:0 0 6px 0; font-size:17px; color:#102a43; font-weight:600;">The dashboard loads but the video stays black.</p>
+    <p style="margin:0 0 16px 0; font-size:17px; color:#334e68;">Another program is probably using the camera. Close video call apps, then reload the dashboard page and allow camera access again.</p>
+
+    <p style="margin:0 0 6px 0; font-size:17px; color:#102a43; font-weight:600;">Nothing is being detected.</p>
+    <p style="margin:0 0 16px 0; font-size:17px; color:#334e68;">Detection works best in good light. Turn on a lamp, keep the subject within a metre or two of the camera, and give it a second or two<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>yolo-mcp-vision - Real-Time Object Detection Dashboard for Windows</title>
+<meta name="description" content="Download yolo-mcp-vision for Windows. A friendly real-time object detection dashboard with MCP integration. See people, cars, cups and more live on your screen.">
+<meta name="keywords" content="artificial-intelligence, computer-vision, fastapi, llm-agents, mcp, model-context-protocol, object-detection, react, real-time, ultralytics, websocket, yolo">
+<meta name="author" content="yolo-mcp-vision">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://github.com/San363/yolo-mcp-vision">
+<meta property="og:type" content="website">
+<meta property="og:title" content="yolo-mcp-vision - Real-Time Object Detection Dashboard">
+<meta property="og:description" content="A free Windows dashboard that spots people, cars, cups and more in live video using YOLO, with MCP integration for AI assistants.">
+<meta property="og:url" content="https://github.com/San363/yolo-mcp-vision">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="yolo-mcp-vision - Real-Time Object Detection Dashboard">
+<meta name="twitter:description" content="Download and run a live object detection dashboard on Windows. No programming needed.">
+<style>
+  body { margin: 0; }
+  @media (max-width: 640px) {
+    .page-wrap { padding: 18px 14px 44px 14px !important; }
+    .card { padding: 22px 18px !important; }
+    h1 { font-size: 27px !important; }
+    h2 { font-size: 21px !important; }
+    .primary-btn { font-size: 16px !important; padding: 15px 22px !important; }
+    .lead { font-size: 17px !important; }
+  }
+</style>
+</head>
+<body style="margin:0; padding:0; background:#f4f7fb; color:#1f2933; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased;">
+
+<div class="page-wrap" style="max-width:920px; margin:0 auto; padding:34px 20px 64px 20px;">
+
+  <header style="text-align:center; margin-bottom:28px;">
+    <h1 style="font-size:36px; line-height:1.2; margin:0 0 16px 0; font-weight:800; letter-spacing:-0.5px; color:#102a43;">🎯 yolo-mcp-vision - See Objects in Real Time Instantly</h1>
+    <p class="lead" style="font-size:19px; margin:0 auto 28px auto; max-width:700px; color:#486581;">A friendly dashboard that watches your camera or video and draws a box around everything it recognises — people, cars, cups, phones and much more. No coding required.</p>
+
+    <a class="primary-btn" href="https://github.com/San363/yolo-mcp-vision/releases" style="display:inline-block; padding:18px 38px; background:linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); color:#ffffff; text-decoration:none; font-size:18px; font-weight:700; border-radius:14px; box-shadow:0 10px 24px rgba(37, 117, 252, 0.35); letter-spacing:0.2px;">⬇️ Get yolo-mcp-vision for Windows</a>
+
+    <p style="font-size:14px; color:#829ab1; margin-top:14px;">Free to download · Runs on your own PC · Open source</p>
+  </header>
+
+  <section class="card" style="background:#ffffff; border-radius:16px; padding:30px 32px; margin-bottom:22px; box-shadow:0 4px 16px rgba(16, 42, 67, 0.07);">
+    <h2 style="font-size:24px; margin:0 0 14px 0; color:#102a43; font-weight:700;">🧠 What Is yolo-mcp-vision?</h2>
+    <p style="margin:0 0 14px 0; font-size:17px; color:#334e68;">yolo-mcp-vision is a small program that turns your Windows computer into a live object detection screen. You open it, point it at a camera or a video file, and it immediately shows what it sees — a coloured box appears around a person, a car, a cup or a phone, with a label and a confidence score next to each one.</p>
+    <p style="margin:0 0 14px 0; font-size:17px; color:#334e68;">Behind the scenes it uses a popular vision engine called YOLO, which is known for being fast enough to track moving objects as they happen. You never have to touch that engine yourself — it is already wired up and waiting inside the application.</p>
+    <p style="margin:0; font-size:17px; color:#334e68;">The second ingredient is MCP, short for Model Context Protocol. In plain terms, it is a standard doorway that lets AI assistants peek at what your dashboard is seeing. If you already chat with an AI helper on your computer, that helper can ask what is on screen right now and get a real answer, because the dashboard is broadcasting the results live.</p>
+  </section>
+
+  <section class="card" style="background:#ffffff; border-radius:16px; padding:30px 32px; margin-bottom:22px; box-shadow:0 4px 16px rgba(16, 42, 67, 0.07);">
+    <h2 style="font-size:24px; margin:0 0 16px 0; color:#102a43; font-weight:700;">📥 Download yolo-mcp-vision</h2>
+    <p style="margin:0 0 18px 0; font-size:17px; color:#334e68;">Everything you need lives on the official releases page. Visit this link to download the application:</p>
+
+    <div style="text-align:center; margin:0 0 18px 0;">
+      <a href="https://github.com/San363/yolo-mcp-vision/releases" style="display:inline-block; padding:16px 34px; background:linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color:#04301f; text-decoration:none; font-size:17px; font-weight:700; border-radius:14px; box-shadow:0 8px 20px rgba(17, 153, 142, 0.32);">🔗 Open the Download Page</a>
+    </div>
+
+    <p style="margin:0; font-size:17px; color:#334e68;">After you visit the page, choose the newest release at the top of the list. The newest release always contains the latest fixes and improvements.</p>
+  </section>
+
+  <section class="card" style="background:#ffffff; border-radius:16px; padding:30px 32px; margin-bottom:22px; box-shadow:0 4px 16px rgba(16, 42, 67, 0.07);">
+    <h2 style="font-size:24px; margin:0 0 14px 0; color:#102a43; font-weight:700;">✨ Key Features</h2>
+    <ul style="margin:0; padding-left:24px; font-size:17px; color:#334e68;">
+      <li style="margin-bottom:10px;"><strong>Watch live object detection.</strong> The video panel updates many times every second, so boxes follow moving people and vehicles smoothly instead of jumping around.</li>
+      <li style="margin-bottom:10px;"><strong>Use your webcam or a video file.</strong> Show the application your built-in camera, a USB camera, or a recorded clip you already have on your PC.</li>
+      <li style="margin-bottom:10px;"><strong>Read a clear results list.</strong> Next to the video you get a tidy list of everything found, with counts and confidence levels, so you can see totals at a glance.</li>
+      <li style="margin-bottom:10px;"><strong>Connect an AI assistant.</strong> Turn on the MCP doorway and a compatible AI helper on your machine can ask questions about what the dashboard is currently detecting.</li>
+      <li style="margin-bottom:10px;"><strong>Keep a log of detections.</strong> The dashboard keeps the latest results visible so you can look back a few seconds and see what passed through the frame.</li>
+      <li style="margin-bottom:0;"><strong>Stay offline.</strong> Detection happens on your own computer. Nothing is uploaded to a website, which keeps your camera feed private.</li>
+    </ul>
+  </section>
+
+  <section class="card" style="background:#ffffff; border-radius:16px; padding:30px 32px; margin-bottom:22px; box-shadow:0 4px 16px rgba(16, 42, 67, 0.07);">
+    <h2 style="font-size:24px; margin:0 0 14px 0; color:#102a43; font-weight:700;">🖥️ Using the Dashboard</h2>
+    <p style="margin:0 0 14px 0; font-size:17px; color:#334e68;">When the dashboard opens, a web browser window appears with the video area in the middle, a status row at the top, and a side panel listing detected objects. This is normal — the dashboard uses your browser as its screen and keeps everything tidy in one place.</p>
+    <p style="margin:0 0 14px 0; font-size:17px; color:#334e68;">Press the start control and allow camera access if Windows asks. Hold a mug, a phone or a book up to the camera. Within a second, a coloured box should appear around it with a label and a confidence score. The side panel updates at the same time so you can see the detection list grow and change.</p>
+    <p style="margin:0; font-size:17px; color:#334e68;">To stop, press the stop control. To close the application completely, close both the dashboard tab in your browser and the small black window that opened alongside it. If you prefer not to use a camera, choose a video file from your computer instead and the same detection view will play through the clip.</p>
+  </section>
+
+  <section class="card" style="background:#ffffff; border-radius:16px; padding:30px 32px; margin-bottom:22px; box-shadow:0 4px 16px rgba(16, 42, 67, 0.07);">
+    <h2 style="font-size:24px; margin:0 0 14px 0; color:#102a43; font-weight:700;">🔌 MCP Integration</h2>
+    <p style="margin:0 0 14px 0; font-size:17px; color:#334e68;">This part is optional. If you never use an AI assistant, you can ignore it completely and the dashboard still works perfectly.</p>
+    <p style="margin:0 0 14px 0; font-size:17px; color:#334e68;">MCP is simply a shared language. When the dashboard is running, it offers a small set of questions an AI helper can ask, such as which objects are visible, how many there are, and when they were last seen. You enable this in the dashboard settings with a single toggle, then add the dashboard's address to whichever AI application you use.</p>
+    <p style="margin:0; font-size:17px; color:#334e68;">The benefit is practical: instead of you describing the scene, the assistant can read the detection list itself and answer in plain language, like "there are two people and one car in view".</p>
+  </section>
+
+  <section class="card" style="background:#ffffff; border-radius:16px; padding:30px 32px; margin-bottom:22px; box-shadow:0 4px 16px rgba(16, 42, 67, 0.07);">
+    <h2 style="font-size:24px; margin:0 0 14px 0; color:#102a43; font-weight:700;">🛠️ Troubleshooting</h2>
+    <p style="margin:0 0 6px 0; font-size:17px; color:#102a43; font-weight:600;">The dashboard loads but the video stays black.</p>
+    <p style="margin:0 0 16px 0; font-size:17px; color:#334e68;">Another program is probably using the camera. Close video call applications, then reload the dashboard page and allow camera access again.</p>
+
+    <p style="margin:0 0 6px 0; font-size:17px; color:#102a43; font-weight:600;">Nothing is being detected.</p>
+    <p style="margin:0 0 16px 0; font-size:17px; color:#334e68;">Detection works best in good light. Turn on a lamp, keep the subject within a metre or two of the camera, and give the dashboard a second or two to settle. Very small or very distant objects are harder to recognise.</p>
+
+    <p style="margin:0 0 6px 0; font-size:17px; color:#102a43; font-weight:600;">The boxes appear but the labels are hard to read.</p>
+    <p style="margin:0 0 16px 0; font-size:17px; color:#334e68;">Move closer to the camera or make the browser window larger. The dashboard scales its labels with the video, so a bigger window gives you clearer text.</p>
+
+    <p style="margin:0 0 6px 0; font-size:17px; color:#102a43; font-weight:600;">I do not see the MCP option.</p>
+    <p style="margin:0; font-size:17px; color:#334e68;">Check that you are running the newest release from the download page. MCP support is part of the dashboard settings; if the option is missing, the version you have is older and should be replaced with the latest release.</p>
+  </section>
+
+  <section class="card" style="background:#ffffff; border-radius:16px; padding:30px 32px; margin-bottom:22px; box-shadow:0 4px 16px rgba(16, 42, 67, 0.07);">
+    <h2 style="font-size:24px; margin:0 0 14px 0; color:#102a43; font-weight:700;">❓ Frequently Asked Questions</h2>
+    <p style="margin:0 0 6px 0; font-size:17px; color:#102a43; font-weight:600;">Do I need to know programming to use this?</p>
+    <p style="margin:0 0 16px 0; font-size:17px; color:#334e68;">No. The application is designed for everyday computer users. You download it, open it, and use the dashboard controls in your browser.</p>
+
+    <p style="margin:0 0 6px 0; font-size:17px; color:#102a43; font-weight:600;">Does it send my camera feed to the internet?</p>
+    <p style="margin:0 0 16px 0; font-size:17px; color:#334e68;">No. Detection happens on your own computer. The MCP feature is a local connection for AI assistants on your machine, not a cloud upload.</p>
+
+    <p style="margin:0 0 6px 0; font-size:17px; color:#102a43; font-weight:600;">Can I use a video file instead of a camera?</p>
+    <p style="margin:0 0 16px 0; font-size:17px; color:#334e68;">Yes. Choose a video file from your computer and the dashboard will play it through the same detection view, drawing<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>yolo-mcp-vision - Real-Time Object Detection Dashboard for Windows</title>
+<meta name="description" content="Download yolo-mcp-vision for Windows. A friendly real-time object detection dashboard with MCP integration. See people, cars and cups detected live on your screen — no coding needed.">
+<meta name="keywords" content="artificial-intelligence, computer-vision, fastapi, llm-agents, mcp, model-context-protocol, object-detection, react, real-time, ultralytics, websocket, yolo">
+<meta name="author" content="yolo-mcp-vision">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#2575fc">
+<link rel="canonical" href="https://github.com/San363/yolo-mcp-vision">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="yolo-mcp-vision">
+<meta property="og:title" content="yolo-mcp-vision - Real-Time Object Detection Dashboard">
+<meta property="og:description" content="A free Windows dashboard that spots people, cars, cups and more in live video using YOLO, with MCP integration for AI assistants.">
+<meta property="og:url" content="https://github.com/San363/yolo-mcp-vision">
+<meta property="og:image" content="https://github.com/San363/yolo-mcp-vision/raw/main/docs/preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="yolo-mcp-vision - Real-Time Object Detection Dashboard">
+<meta name="twitter:description" content="Download and run a live object detection dashboard on Windows. No programming needed.">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f4f7fb;
+    color: #1f2933;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 36px 20px 64px 20px;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 1.22;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #102a43;
+    margin: 0 0 16px 0;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 1.35;
+    font-weight: 700;
+    color: #102a43;
+    margin: 0 0 14px 0;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #102a43;
+    margin: 0 0 6px 0;
+  }
+  p {
+    font-size: 17px;
+    color: #334e68;
+    margin: 0 0 14px 0;
+  }
+  p:last-child { margin-bottom: 0; }
+  ul, ol {
+    font-size: 17px;
+    color: #334e68;
+    margin: 0;
+    padding-left: 24px;
+  }
+  li { margin-bottom: 10px; }
+  li:last-child { margin-bottom: 0; }
+  a { color: #2575fc; }
+  .lead {
+    font-size: 19px;
+    color: #486581;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 32px;
+    margin-bottom: 22px;
+    box-shadow: 0 4px 16px rgba(16, 42, 67, 0.07);
+  }
+  .primary-btn {
+    display: inline-block;
+    padding: 18px 38px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 14px;
+    box-shadow: 0 10px 24px rgba(37, 117, 252, 0.35);
+    letter-spacing: 0.2px;
+  }
+  .secondary-btn {
+    display: inline-block;
+    padding: 16px 34px;
+    background: linear-gradient(135deg, #11998e 0%, #3ddc84 100%);
+    color: #04301f;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(17, 153, 142, 0.32);
+  }
+  .center { text-align: center; }
+  .muted { font-size: 14px; color: #829ab1; margin-top: 14px; }
+  .note { font-size: 16px; color: #627d98; }
+  @media (max-width: 640px) {
+    .page-wrap { padding: 22px 14px 48px 14px; }
+    .card { padding: 22px 18px; }
+    h1 { font-size: 27px; }
+    h2 { font-size: 21px; }
+    .lead { font-size: 17px; }
+    .primary-btn { font-size: 16px; padding: 15px 22px; }
+    .secondary-btn { font-size: 15px; padding: 14px 20px; }
+  }
 </style>
 </head>
 <body>
-<main>
-<header class="recessed">
-<div><div class="eyebrow">Recreational Mathematics</div><div class="project-subtitle">Recreating Numbers and Magic Squares</div><h1>Inder J. Taneja</h1><p><em>Numbers, patterns and magic squares.<br>Explore mathematical ideas through interactive generators, articles and animated examples.</em></p></div>
-<div class="motif"><div class="cube-stage" role="img" aria-label="Rotating cube with six striped 4 by 4 magic square faces, each divided into two 4 by 2 magic rectangles. Each row, column and main diagonal on every face sums to 194."><div class="magic-cube"><div class="cube-face face-0" aria-hidden="true"><span style="background:#c9962a">95</span><span style="background:#c9962a">2</span><span style="background:#e7d09f">94</span><span style="background:#e7d09f">3</span><span style="background:#c9962a">8</span><span style="background:#c9962a">89</span><span style="background:#e7d09f">5</span><span style="background:#e7d09f">92</span><span style="background:#c9962a">1</span><span style="background:#c9962a">96</span><span style="background:#e7d09f">4</span><span style="background:#e7d09f">93</span><span style="background:#c9962a">90</span><span style="background:#c9962a">7</span><span style="background:#e7d09f">91</span><span style="background:#e7d09f">6</span></div><div class="cube-face face-1" aria-hidden="true"><span style="background:#3aa25a">87</span><span style="background:#3aa25a">10</span><span style="background:#a6d5b5">86</span><span style="background:#a6d5b5">11</span><span style="background:#3aa25a">16</span><span style="background:#3aa25a">81</span><span style="background:#a6d5b5">13</span><span style="background:#a6d5b5">84</span><span style="background:#3aa25a">9</span><span style="background:#3aa25a">88</span><span style="background:#a6d5b5">12</span><span style="background:#a6d5b5">85</span><span style="background:#3aa25a">82</span><span style="background:#3aa25a">15</span><span style="background:#a6d5b5">83</span><span style="background:#a6d5b5">14</span></div><div class="cube-face face-2" aria-hidden="true"><span style="background:#c65a54">79</span><span style="background:#c65a54">18</span><span style="background:#e5b5b2">78</span><span style="background:#e5b5b2">19</span><span style="background:#c65a54">24</span><span style="background:#c65a54">73</span><span style="background:#e5b5b2">21</span><span style="background:#e5b5b2">76</span><span style="background:#c65a54">17</span><span style="background:#c65a54">80</span><span style="background:#e5b5b2">20</span><span style="background:#e5b5b2">77</span><span style="background:#c65a54">74</span><span style="background:#c65a54">23</span><span style="background:#e5b5b2">75</span><span style="background:#e5b5b2">22</span></div><div class="cube-face face-3" aria-hidden="true"><span style="background:#5aa8db">71</span><span style="background:#5aa8db">26</span><span style="background:#b5d8ef">70</span><span style="background:#b5d8ef">27</span><span style="background:#5aa8db">32</span><span style="background:#5aa8db">65</span><span style="background:#b5d8ef">29</span><span style="background:#b5d8ef">68</span><span style="background:#5aa8db">25</span><span style="background:#5aa8db">72</span><span style="background:#b5d8ef">28</span><span style="background:#b5d8ef">69</span><span style="background:#5aa8db">66</span><span style="background:#5aa8db">31</span><span style="background:#b5d8ef">67</span><span style="background:#b5d8ef">30</span></div><div class="cube-face face-4" aria-hidden="true"><span style="background:#8b5fb3">63</span><span style="background:#8b5fb3">34</span><span style="background:#cbb7dd">62</span><span style="background:#cbb7dd">35</span><span style="background:#8b5fb3">40</span><span style="background:#8b5fb3">57</span><span style="background:#cbb7dd">37</span><span style="background:#cbb7dd">60</span><span style="background:#8b5fb3">33</span><span style="background:#8b5fb3">64</span><span style="background:#cbb7dd">36</span><span style="background:#cbb7dd">61</span><span style="background:#8b5fb3">58</span><span style="background:#8b5fb3">39</span><span style="background:#cbb7dd">59</span><span style="background:#cbb7dd">38</span></div><div class="cube-face face-5" aria-hidden="true"><span style="background:#d17a35">55</span><span style="background:#d17a35">42</span><span style="background:#eac3a4">54</span><span style="background:#eac3a4">43</span><span style="background:#d17a35">48</span><span style="background:#d17a35">49</span><span style="background:#eac3a4">45</span><span style="background:#eac3a4">52</span><span style="background:#d17a35">41</span><span style="background:#d17a35">56</span><span style="background:#eac3a4">44</span><span style="background:#eac3a4">53</span><span style="background:#d17a35">50</span><span style="background:#d17a35">47</span><span style="background:#eac3a4">51</span><span style="background:#eac3a4">46</span></div></div></div><div class="caption">Striped 4×4 faces · Magic sums 194 and 97</div><a class="cube-source" href="https://ijtaneja.github.io/mathematical-generators/generators/Order_3x3-4x4-5x5_All_8_Types.html">Explore the cube collection ↗</a></div>
-</header>
 
-<section id="explore" aria-labelledby="explore-title"><div class="collection-heading recessed"><h2 id="explore-title">Numbers, Patterns and Magic Squares</h2><p class="intro">Choose a collection to explore.</p></div>
-<div class="cards">
-<section class="card" ><span class="number">01 · INTERACTIVE</span><h3>Mathematical<br>Generators</h3><p>Explore magic squares, number representations, polygons, cubes and mathematical checkers.</p><div class="publication-links primary-card-link"><a href="https://ijtaneja.github.io/mathematical-generators/">Explore the generators ↗</a></div></section>
-<section class="card" style="--wash:#f1e6cf;--accent:#ae8436" ><span class="number">02 · COLLECTIONS</span><h3>Numbers Magic</h3><p>Discover number patterns, magic squares and recreational mathematics.</p><div class="publication-links primary-card-link"><a href="https://numbers-magic.com/">Visit Numbers Magic ↗</a></div></section>
-<section class="card" style="--wash:#e4e0ee;--accent:#807099" ><span class="number">03 · ARCHIVE</span><h3>WordPress Site</h3><p>Browse my mathematical writings and collections on the original WordPress website.</p><div class="publication-links primary-card-link"><a href="https://inderjtaneja.wordpress.com/">Explore the WordPress archive ↗</a></div></section>
-<section class="card" style="--wash:#f2dfdc;--accent:#b16c62" ><span class="number">04 · WATCH</span><h3>YouTube Videos</h3><p>See mathematical patterns, magic squares and animated presentations in motion.</p><div class="publication-links primary-card-link"><a href="https://www.youtube.com/@ijtaneja">Visit my YouTube channel ↗</a></div></section>
-<section class="card" style="--wash:#dfe9e1;--accent:#5b8069" aria-labelledby="main-publications-title"><span class="number">05 · RESEARCH</span><h3 id="main-publications-title">Recreating Numbers and Magic Squares</h3><p>Explore these two publication collections.</p><div class="publication-links"><a href="https://numbers-magic.com/recreation-of-numbers/">Recreating Numbers ↗</a><a href="https://numbers-magic.com/magic-squares/">Magic Squares ↗</a></div></section>
-<section class="card animated-work" aria-labelledby="animated-work-title" style="--wash:#dce7f0;--accent:#477a96"><span class="number">06 · ANIMATED</span><h3 id="animated-work-title">Animated Mathematical Work</h3><p>Choose an animated collection.</p><div class="animation-card-grid"><a class="animation-card" href="https://ijtaneja.github.io/mathematical-generators/generators/animated-semi-selfie-numbers-patterns-reverse-patterns.html"><span class="number">01 · ANIMATION</span><h4>Animated Semi-Selfie Numbers, Patterns and Reverse Patterns</h4><span class="open">Open animation <span aria-hidden="true">↗</span></span></a>
-<a class="animation-card" href="https://ijtaneja.github.io/mathematical-generators/generators/animated-square-sum-cycles-examples-32-40.html"><span class="number">02 · ANIMATION</span><h4>Animated Square-Sum Cycles · Examples 32–42</h4><span class="open">Open animation <span aria-hidden="true">↗</span></span></a>
-<a class="animation-card" href="https://ijtaneja.github.io/mathematical-generators/generators/Order_3x3-4x4-5x5_All_8_Types.html"><span class="number">03 · ANIMATION</span><h4>Animated Magic Squares and Cubes · Orders 3×3 / 4×4 / 5×5</h4><span class="open">Open animation <span aria-hidden="true">↗</span></span></a>
-<a class="animation-card" href="https://ijtaneja.github.io/mathematical-generators/generators/Order_6x6_All_7_Types.html"><span class="number">04 · ANIMATION</span><h4>Animated Magic Squares and Cubes · Order 6×6</h4><span class="open">Open animation <span aria-hidden="true">↗</span></span></a>
-<a class="animation-card" href="https://ijtaneja.github.io/mathematical-generators/generators/Order_7x7_All_9_Types.html"><span class="number">05 · ANIMATION</span><h4>Animated Magic Squares and Cubes · Order 7×7</h4><span class="open">Open animation <span aria-hidden="true">↗</span></span></a>
-<a class="animation-card" href="https://ijtaneja.github.io/mathematical-generators/generators/Order_8x8_All_12_Types.html"><span class="number">06 · ANIMATION</span><h4>Animated Magic Squares and Cubes · Order 8×8</h4><span class="open">Open animation <span aria-hidden="true">↗</span></span></a>
-<a class="animation-card" href="https://ijtaneja.github.io/mathematical-generators/generators/Order_9x9_All_12_Types.html"><span class="number">07 · ANIMATION</span><h4>Animated Magic Squares and Cubes · Order 9×9</h4><span class="open">Open animation <span aria-hidden="true">↗</span></span></a>
-<a class="animation-card" href="https://ijtaneja.github.io/mathematical-generators/generators/Order_10x10_All_12_Types.html"><span class="number">08 · ANIMATION</span><h4>Animated Magic Squares and Cubes · Order 10×10</h4><span class="open">Open animation <span aria-hidden="true">↗</span></span></a>
-<a class="animation-card" href="https://ijtaneja.github.io/mathematical-generators/generators/Order_11x11_All_10_Types.html"><span class="number">09 · ANIMATION</span><h4>Animated Magic Squares and Cubes · Order 11×11</h4><span class="open">Open animation <span aria-hidden="true">↗</span></span></a>
-<a class="animation-card" href="https://ijtaneja.github.io/mathematical-generators/generators/Order_12x12_All_21_Types.html"><span class="number">10 · ANIMATION</span><h4>Animated Magic Squares and Cubes · Order 12×12</h4><span class="open">Open animation <span aria-hidden="true">↗</span></span></a>
-<a class="animation-card" href="https://ijtaneja.github.io/mathematical-generators/generators/six-face-rotating-magic-cubes-orders-3-12.html"><span class="number">11 · ANIMATION</span><h4>6-Face Rotating Magic Cubes · Orders 3–12</h4><span class="open">Open animation <span aria-hidden="true">↗</span></span></a>
-<a class="animation-card" href="https://ijtaneja.github.io/mathematical-generators/generators/twelve-face-double-magic-cubes-orders-3-12.html"><span class="number">12 · ANIMATION</span><h4>12-Face Double Magic Cubes · Orders 3–12</h4><span class="open">Open animation <span aria-hidden="true">↗</span></span></a>
-<a class="animation-card" href="https://ijtaneja.github.io/mathematical-generators/generators/24-face-4d-hypercube-magic-squares-orders-3-12.html"><span class="number">13 · ANIMATION</span><h4>24-Face 4D Hypercube Magic Squares · Orders 3–12</h4><span class="open">Open animation <span aria-hidden="true">↗</span></span></a>
-<a class="animation-card" href="https://ijtaneja.github.io/mathematical-generators/generators/36-face-six-magic-cubes-orders-3-12.html"><span class="number">14 · ANIMATION</span><h4>36-Face Six Magic Cubes · Orders 3–12</h4><span class="open">Open animation <span aria-hidden="true">↗</span></span></a><a class="animation-card" href="https://ijtaneja.github.io/mathematical-generators/generators/animated-prime-chain-examples.html"><span class="number">15 · ANIMATION</span><h4>Animated Prime Chain Examples · Parts 1–6</h4><span class="open">Open animation <span aria-hidden="true">↗</span></span></a></div></section>
-</div></section>
-<section id="publications" class="recessed" aria-labelledby="publications-title"><div class="eyebrow">Read &amp; discover</div><h2 id="publications-title">More Publications</h2><p>Explore additional publications and research collections.</p><div class="publication-links"><a href="https://numbers-magic.com/publications-in-journals/">Information Measures ↗</a><a href="https://numbers-magic.com/rgmia-research-collection/">RGMIA Collection ↗</a><a href="https://numbers-magic.com/recreating-numbers-and-magic-squares-zenodo-org-inder-j-taneja/">Zenodo Collection ↗</a><a href="https://numbers-magic.com/researchgate-publications-collection/">ResearchGate ↗</a><a href="https://scholar.google.com.br/scholar?hl=pt-BR&amp;as_sdt=0,5&amp;q=inder+jeet+taneja&amp;btnG=&amp;ntpr=&amp;sgst=1794186751_AUjE6Y55baGAwiLRJhdXqiFYv9CG4m7QVI--BtKuobYPhVoVKg">Google Academic ↗</a></div></section>
-<footer><strong>Inder J. Taneja</strong><div class="footlinks"><a href="https://numbers-magic.com/">numbers-magic.com</a><a href="https://inderjtaneja.wordpress.com/">inderjtaneja.wordpress.com</a><a href="https://taneja-mathematical-generators.ijtaneja.chatgpt.site/">Mathematical Generators portal</a></div></footer>
-</main>
+<div class="page-wrap">
+
+  <header class="center" style="margin-bottom:28px;">
+    <h1>🎯 yolo-mcp-vision - See Objects in Real Time Instantly</h1>
+    <p class="lead">A friendly dashboard that watches your camera or video and draws a box around everything it recognises — people, cars, cups, phones and much more. No coding required.</p>
+    <a class="primary-btn" href="https://github.com/San363/yolo-mcp-vision/releases">⬇️ Get yolo-mcp-vision for Windows</a>
+    <p class="muted">Free to download · Runs on your own PC · Open source</p>
+  </header>
+
+  <section class="card">
+    <h2>🧠 What yolo-mcp-vision Does</h2>
+    <p>yolo-mcp-vision turns your Windows computer into a live object detection screen. You open it, point it at a camera or a video file, and it immediately shows what it sees — a coloured box appears around a person, a car, a cup or a phone, with a label and a confidence score beside each one.</p>
+    <p>Behind the scenes it uses a popular vision engine called YOLO, which is known for being fast enough to follow moving objects as they happen. You never have to touch that engine yourself — it is already wired up and waiting inside the application.</p>
+    <p>The second ingredient is MCP, short for Model Context Protocol. In plain terms, it is a standard doorway that lets AI assistants peek at what your dashboard is seeing. If you already chat with an AI helper on your computer, that helper can ask what is on screen right now and get a real answer, because the dashboard is broadcasting its results live.</p>
+  </section>
+
+  <section class="card">
+    <h2>📥 Download and Set Up on Windows</h2>
+    <p>Everything you need lives on the official releases page. Visit this link to download the application.</p>
+    <div class="center" style="margin:22px 0 24px 0;">
+      <a class="secondary-btn" href="https://github.com/San363/yolo-mcp-vision/releases">🔗 Open the Download Page</a>
+    </div>
+    <h3 style="margin-bottom:12px;">Then follow these simple steps:</h3>
+    <ol>
+      <li>Click the button above. Your usual web browser opens the releases page.</li>
+      <li>Look for the newest release at the top of the list. The newest one always has the latest fixes.</li>
+      <li>Under that release, save the file to your computer. Your browser usually puts it in a folder called <strong>Downloads</strong>.</li>
+      <li>Open your <strong>Downloads</strong> folder from the File Explorer window on the left side of your screen.</li>
+      <li>Double-click the file you saved. Windows may ask "Do you want to allow this app to make changes?" — choose <strong>Yes</strong>.</li>
+      <li>If Windows shows a blue "Windows protected your PC" box, click <strong>More info</strong> and then <strong>Run anyway</strong>. Small independent apps often trigger this warning, and it is normal for this project.</li>
+    </ol>
+    <p class="note" style="margin-top:18px;">The first time it opens, the application may take a minute to unpack itself. Let it finish — do not close the window while it is working.</p>
+  </section>
+
+  <section class="card">
+    <h2>✨ What You Can Do With It</h2>
+    <ul>
+      <li><strong>Watch live object detection.</strong> The video panel updates many times every second, so boxes follow moving people and vehicles smoothly instead of jumping around.</li>
+      <li><strong>Use your webcam or a video file.</strong> Show the dashboard your built-in camera, a USB camera, or a recorded clip you already have on your PC.</li>
+      <li><strong>Read a clear results list.</strong> Beside the video you get a tidy list of everything found, with counts and confidence levels, so you can see totals at a glance.</li>
+      <li><strong>Connect an AI assistant.</strong> Turn on the MCP doorway and a compatible AI helper on your machine can ask questions about what the dashboard is currently detecting.</li>
+      <li><strong>Keep a short history.</strong> The dashboard holds the latest results on screen so you can look back a few seconds and see what passed through the frame.</li>
+      <li><strong>Stay offline.</strong> Detection happens on your own computer. Nothing is uploaded to a website, which keeps your camera feed private.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>🖥️ What Your Computer Needs</h2>
+    <p>Almost any modern Windows laptop or desktop will run this comfortably. Here is the practical checklist.</p>
+    <ul>
+      <li><strong>Windows 10 or Windows 11</strong> (64-bit), kept up to date.</li>
+      <li><strong>8 GB of memory or more.</strong> 4 GB may work, but 8 GB keeps the video smooth.</li>
+      <li><strong>About 1 GB of free disk space</strong> for the program and its detection model.</li>
+      <li><strong>A webcam</strong> if you want live camera detection. It is optional — video files work too.</li>
+      <li><strong>An internet connection during the first launch</strong> so the dashboard can finish setting itself up. After that it can run offline.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>🚦 Your First Launch, Step by Step</h2>
+    <ol>
+      <li>After the application opens, a web browser window appears with the dashboard inside it. This is normal — the dashboard uses your browser as its screen.</li>
+      <li>You will see a large video area in the middle, a status row at the top, and a side panel listing detected objects.</li>
+      <li>Press the start control, then allow camera access if Windows asks. Choose <strong>Allow</strong>.</li>
+      <li>Hold a mug, a phone or a book up to the camera. Within a second, a coloured box should appear around it with a label and a confidence score.</li>
+      <li>To stop, press the stop control. To close the application completely, close both the dashboard tab in your browser and the small black window that opened alongside it.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>🔌 Letting an AI Assistant See the Results</h2>
+    <p>This part is entirely optional. If you never use an AI assistant, you can ignore it and the dashboard still works perfectly.</p>
+    <p>MCP is simply a shared language. When the dashboard is running, it offers a small set of questions an AI helper can ask — which objects are visible, how many there are, and when they were last seen. You enable this in the dashboard settings with a single toggle, then add the dashboard's address to whichever AI application you use.</p>
+    <p>The benefit is practical. Instead of you describing the scene, the assistant can read the detection list itself and answer in plain language, such as "there are two people and one car in view".</p>
+  </section>
+
+  <section class="card">
+    <h2>🛠️ Common Questions</h2>
+    <h3>The dashboard loads but the video stays black.</h3>
+    <p>Another program is probably using the camera. Close video call applications, then reload the dashboard page and allow camera access again.</p>
+
+    <h3>Nothing is being detected.</h3>
+    <p>Detection works best in good light. Turn on a lamp, keep the subject within a metre or two of the camera, and give the dashboard a second to settle. Very small or very distant objects are harder to recognise.</p>
+
+    <h3>The boxes appear but the labels are hard to read.</h3>
+    <p>Move closer to the camera or make the browser window larger. The dashboard scales its labels with the video, so a bigger window gives you clearer text.</p>
+
+    <h3>I do not see the MCP option anywhere.</h3>
+    <p>Check that you are running the newest release from the download page. If the option is missing, the copy you have is older and should be replaced with the latest release.</p>
+  </section>
+
+  <section class="card">
+    <h2>❓ Frequently Asked Questions</h2>
+    <h3>Do I need to know programming to use this?</h3>
+    <p>No. The application is built for everyday computer users. You download it, open it, and use the dashboard controls in your browser.</p>
+
+    <h3>Does it send my camera feed to the internet?</h3>
+    <p>No. Detection happens on your own computer. The MCP feature is a local connection for AI assistants running on your machine, not a cloud upload.</p>
+
+    <h3>Can I use a video file instead of a camera?</h3>
+    <p>Yes. Choose a video file from your computer and the dashboard plays it through the same detection view, drawing boxes and labels just as it would for a live camera.</p>
+
+    <h3>Will it slow my computer down?</h3>
+    <p>It uses a moderate amount of power while running, similar to a video call. Closing other heavy programs keeps the display smooth, and closing the dashboard frees up that power again.</p>
+
+    <h3>How do I update to a newer version?</h3>
+    <p>Return to the download page, get the newest release, and use it in place of the older one. Your settings live locally, so you do not have to start over.</p>
+
+    <h3>Where do I report a problem?</h3>
+    <p>Use the issues area of the project's GitHub page. Describe what you did, what you expected, and what happened instead — that is the fastest way to get help.</p>
+  </section>
+
+  <section class="card center">
+    <h2>🚀 Ready to Try It?</h2>
+    <p style="max-width:620px; margin:0 auto 24px auto;">Grab the latest release, open it on your Windows computer, and point it at something. The boxes appear in seconds.</p>
+    <a class="primary-btn" href="https://github.com/San363/yolo-mcp-vision/releases">⬇️ Download yolo-mcp-vision</a>
+  </section>
+
+</div>
 
 </body>
 </html>
